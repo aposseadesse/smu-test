@@ -25,13 +25,19 @@
         .container:hover {
             transform: translateY(-5px);
         }
-        h1 {
+        h1, h2 {
             color: #2b6cb0;
             text-align: center;
-            font-size: 2.5em;
             margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.5em;
             border-bottom: 3px solid #4299e1;
             padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
         }
         p {
             color: #444;
@@ -54,6 +60,22 @@
             left: 0;
             color: #4299e1;
         }
+        .section {
+            margin: 40px 0;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+        .team-member {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .contact-info {
+            background: #ebf8ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
         .footer {
             text-align: center;
             margin-top: 40px;
@@ -74,15 +96,52 @@
 <body>
     <div class="container">
         <h1>Welcome to SMU Test</h1>
-        <p>This is a simple HTML page created as a test. Feel free to modify and expand it as needed!</p>
-        <p>Some features of this page:</p>
-        <ul>
-            <li>Clean and modern design</li>
-            <li>Responsive layout</li>
-            <li>Easy to read typography</li>
-            <li>Subtle shadows and rounded corners</li>
-            <li>Smooth hover animations</li>
-        </ul>
+        
+        <section class="section" id="about">
+            <h2>About Us</h2>
+            <p>We are a dynamic team dedicated to creating innovative solutions for our clients. Our mission is to deliver excellence through creativity and technical expertise.</p>
+        </section>
+
+        <section class="section" id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>UI/UX Design</li>
+                <li>Mobile Applications</li>
+                <li>Cloud Solutions</li>
+                <li>Digital Strategy</li>
+            </ul>
+        </section>
+
+        <section class="section" id="projects">
+            <h2>Featured Projects</h2>
+            <p>Here are some of our recent achievements:</p>
+            <ul>
+                <li>E-commerce Platform Redesign</li>
+                <li>Healthcare Management System</li>
+                <li>Educational Technology Platform</li>
+            </ul>
+        </section>
+
+        <section class="section" id="team">
+            <h2>Our Team</h2>
+            <div class="team-member">
+                <h3>John Doe</h3>
+                <p>Lead Developer</p>
+            </div>
+            <div class="team-member">
+                <h3>Jane Smith</h3>
+                <p>UX Designer</p>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Email: contact@example.com</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Address: 123 Tech Street, Digital City, DC 12345</p>
+        </section>
+
         <div class="footer">
             <p>Created for testing purposes - 2024</p>
         </div>
