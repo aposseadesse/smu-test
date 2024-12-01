@@ -11,26 +11,63 @@
             margin: 0;
             padding: 20px;
             background-color: #f0f2f5;
+            color: #333;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
             background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .container:hover {
+            transform: translateY(-5px);
         }
         h1 {
-            color: #1a73e8;
+            color: #2b6cb0;
             text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #4299e1;
+            padding-bottom: 10px;
         }
         p {
             color: #444;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e2e8f0;
+            position: relative;
+            padding-left: 25px;
+        }
+        li:before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #4299e1;
         }
         .footer {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e2e8f0;
             color: #666;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
         }
     </style>
 </head>
@@ -44,6 +81,7 @@
             <li>Responsive layout</li>
             <li>Easy to read typography</li>
             <li>Subtle shadows and rounded corners</li>
+            <li>Smooth hover animations</li>
         </ul>
         <div class="footer">
             <p>Created for testing purposes - 2024</p>
